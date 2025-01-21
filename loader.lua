@@ -29,7 +29,7 @@ local function LoadHub()
         -- Game Detection
         local Games = {
             -- FPS Games
-            [301549746] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/CounterBlox.lua", -- Counter Blox
+            [97463085072346] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/CounterBlox.lua", -- Counter Blox
             
             -- Simulator Games
             [8737899170] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/PetSimulator99.lua", -- Pet Simulator 99

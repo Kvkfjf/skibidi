@@ -15,7 +15,7 @@ local function LoadHub()
 
         -- Game Detection
         local Games = {
-            [4623386862] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/RaceClicker.lua",
+            [9285238704] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/RaceClicker.lua",
             -- Add more games here
         }
 

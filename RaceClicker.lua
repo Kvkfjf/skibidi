@@ -35,8 +35,8 @@ getgenv().Settings = {
 
 -- Available Codes
 local codes = {
-    "Release", "Likes10k", "Likes20k", "Likes30k", "Likes40k", "Likes50k",
-    "Winter", "NewYear2024", "Valentine", "Easter2024"
+    "Spring", "Event", "Atlantis", "ULTRAHUGEUPDATE", "happyanniversaryraceclicker", "sorryforanotherrejoin",
+    "500mvisits", "goodupdate", "happy4thofjuly", "freepet"
 }
 
 -- Create Tabs

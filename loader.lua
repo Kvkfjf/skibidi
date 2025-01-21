@@ -29,14 +29,14 @@ local function LoadHub()
         -- Game Detection
         local Games = {
             -- FPS Games
-            [97463085072346] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/CounterBlox.lua", -- Counter Blox
+            [17586052747] = "CounterBlox.lua", -- Reimagined Blox
             
             -- Simulator Games
-            [8737899170] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/PetSimulator99.lua", -- Pet Simulator 99
-            [3175647227] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/MuscleLegends.lua", -- Muscle Legends
+            [8737899170] = "PetSimulator99.lua", -- Pet Simulator 99
+            [3175647227] = "MuscleLegends.lua", -- Muscle Legends
             
             -- Racing Games
-            [4623386862] = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/RaceClicker.lua" -- Race Clicker
+            [4623386862] = "RaceClicker.lua" -- Race Clicker
         }
         
         -- Welcome Message
@@ -44,9 +44,9 @@ local function LoadHub()
         
         -- Load Game Script
         local gameId = game.PlaceId
-        local scriptUrl = Games[gameId]
+        local scriptName = Games[gameId]
         
-        if scriptUrl then
+        if scriptName then
             -- Show loading notification
             local gameName = pcall(function() 
                 return game:GetService("MarketplaceService"):GetProductInfo(gameId).Name 
@@ -55,6 +55,7 @@ local function LoadHub()
             Notify("Loading...", "Loading script for " .. gameName, 3)
             
             -- Load game script
+            local scriptUrl = "https://raw.githubusercontent.com/Kvkfjf/skibidi/main/" .. scriptName
             local success, err = pcall(function()
                 loadstring(game:HttpGet(scriptUrl))()
             end)
